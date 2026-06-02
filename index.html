@@ -3,128 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nilton Pegass | Portfólio & Data Science</title>
-    <!-- Google Fonts -->
+    <meta name="description" content="Portfólio de Nilton Pegas, analista de dados com foco em machine learning, BI, Python, SQL e projetos aplicados a negócio.">
+    <title>Nilton Pegas | Dados, BI e Machine Learning</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Background Animation -->
-    <div class="bg-glow bg-glow-1"></div>
-    <div class="bg-glow bg-glow-2"></div>
-    <div class="bg-glow bg-glow-3"></div>
-
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navegação principal">
         <div class="nav-container">
-            <a href="#" class="logo">NP<span>.</span></a>
+            <a href="#hero" class="logo">Nilton Pegas</a>
             <ul class="nav-links">
-                <li><a href="#hero">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Competências</a></li>
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </div>
     </nav>
 
-    <header id="hero" class="hero-section">
-        <div class="hero-content reveal">
-            <span class="badge">Data Scientist & Developer</span>
-            <h1>Olá, eu sou<br><span class="highlight">Nilton Pegass</span></h1>
-            <p>Transformando dados complexos em insights acionáveis com Machine Learning e designs focados em alto impacto. Conheça meu histórico e meus projetos de destaque abaixo.</p>
-            
-            <div class="hero-buttons">
-                <a href="https://github.com/niltonPegass?tab=repositories" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://www.kaggle.com/niltonpegass" target="_blank" class="btn btn-secondary">
-                    <i class="fab fa-kaggle"></i> Kaggle
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <section id="projects" class="projects-section">
-        <div class="section-header reveal">
-            <h2>Projetos em Destaque</h2>
-            <p>Conheça os desafios de dados que transformei em soluções.</p>
-        </div>
-
-        <div class="projects-grid">
-            <!-- Project 1: HR Salifort Motors -->
-            <div class="project-card glass reveal">
-                <div class="project-image-placeholder">
-                    <div class="stats-overlay">
-                        <div class="stat"><span class="number">95.2%</span><span class="label">Acurácia</span></div>
-                        <div class="stat"><span class="number">XGBoost</span><span class="label">Modelo</span></div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">Classification</span>
-                        <span class="tag">Python</span>
-                    </div>
-                    <h3>HR Salifort Motors - Churn Prediction</h3>
-                    <p>
-                        Desenvolvimento de modelos preditivos para identificar a probabilidade de desligamento (churn) de funcionários utilizando aprendizado supervisionado. A análise com XGBoost destacou métricas críticas como carga horária, avaliação e nível de satisfação.
-                    </p>
-                    <ul class="project-highlights">
-                        <li><i class="fas fa-check-circle"></i> Refatoração modular do Pipeline</li>
-                        <li><i class="fas fa-check-circle"></i> Otimização dos Hiperparâmetros via GridSearch</li>
-                        <li><i class="fas fa-check-circle"></i> Curvas ROC e validação estratificada cruzada</li>
-                    </ul>
-                    <a href="https://www.kaggle.com/code/niltonpegass/hr-salifort-motors-capstone-project" target="_blank" class="btn btn-outline">
-                        Ver Notebook <i class="fas fa-arrow-right"></i>
+    <main>
+        <header id="hero" class="hero-section">
+            <div class="hero-content reveal">
+                <p class="eyebrow">Data Analyst · Machine Learning · Business Intelligence</p>
+                <h1>Transformo dados em decisões com clareza técnica e foco em negócio.</h1>
+                <p class="hero-copy">
+                    Sou Nilton Pegas, Analista de Dados no Grupo OFS, com certificação Google Advanced Data Analytics,
+                    formação em Engenharia Mecânica e atuação prática em dashboards, consultas a bases de dados,
+                    modelagem preditiva e automação de análises.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/niltonPegass?tab=repositories" target="_blank" rel="noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Ver GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
                 </div>
             </div>
 
-            <!-- Project 2: Yellow Taxi Fare Prediction -->
-            <div class="project-card glass reveal">
-                <div class="project-image-placeholder">
-                    <div class="stats-overlay">
-                        <div class="stat"><span class="number">98.6%</span><span class="label">R² Score</span></div>
-                        <div class="stat"><span class="number">XGBoost</span><span class="label">Melhor Modelo</span></div>
+            <aside class="hero-panel reveal" aria-label="Resumo profissional">
+                <div class="profile-card">
+                    <span class="profile-label">Foco atual</span>
+                    <h2>Analytics aplicado ao negócio</h2>
+                    <p>
+                        Construção de pipelines analíticos, modelos supervisionados, dashboards e estudos que conectam
+                        evidências quantitativas a decisões operacionais e estratégicas.
+                    </p>
+                </div>
+                <div class="metric-grid">
+                    <div>
+                        <strong>Top 6</strong>
+                        <span>Bootcamp Python Data Analytics com 23k+ participantes</span>
+                    </div>
+                    <div>
+                        <strong>Top 17</strong>
+                        <span>Bootcamp Data Science com Python com 17k+ participantes</span>
+                    </div>
+                    <div>
+                        <strong>12</strong>
+                        <span>Repositórios públicos com estudos e projetos de dados</span>
+                    </div>
+                    <div>
+                        <strong>Google</strong>
+                        <span>Advanced Data Analytics Certificate</span>
                     </div>
                 </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">Regression</span>
-                        <span class="tag">Python</span>
-                    </div>
-                    <h3>NYC Yellow Taxi - Fare Prediction</h3>
+            </aside>
+        </header>
+
+        <section id="about" class="section about-section">
+            <div class="section-header reveal">
+                <p class="eyebrow">Sobre mim</p>
+                <h2>Perfil analítico com repertório técnico e visão de impacto.</h2>
+            </div>
+            <div class="about-grid reveal">
+                <article class="about-card large-card">
+                    <h3>Apresentação</h3>
                     <p>
-                        Desenvolvimento de modelos preditivos de regressão para estimar o valor das corridas de táxi em Nova Iorque, com base em variáveis como distância, duração, hora e localização. O XGBoost se destacou com R² ≈ 0.986.
+                        Trabalho na interseção entre análise de negócio e ciência de dados. Minha rotina envolve transformar
+                        bases de dados em diagnósticos, dashboards e modelos que ajudam equipes a priorizar ações, medir
+                        desempenho e identificar oportunidades. Tenho base analítica construída na Engenharia Mecânica e
+                        aprofundamento em BI, Python, SQL e machine learning.
                     </p>
-                    <ul class="project-highlights">
-                        <li><i class="fas fa-check-circle"></i> Feature Engineering: rush hour, períodos do dia e rotas</li>
-                        <li><i class="fas fa-check-circle"></i> Tratamento de outliers com IQR personalizado</li>
-                        <li><i class="fas fa-check-circle"></i> Otimização via GridSearchCV com KFold cross-validation</li>
-                    </ul>
-                    <a href="https://www.kaggle.com/code/niltonpegass/yellow-taxi-regression-fare-predict" target="_blank" class="btn btn-outline">
-                        Ver Notebook <i class="fas fa-arrow-right"></i>
-                    </a>
+                </article>
+                <article class="about-card">
+                    <h3>Formação</h3>
+                    <p>Business Intelligence & Analytics pela Conquer Business School e Engenharia Mecânica pela UFF.</p>
+                </article>
+                <article class="about-card">
+                    <h3>Credenciais</h3>
+                    <p>Google Advanced Data Analytics, bootcamps DIO/iFood/Squadio e trilhas DataTalksClub.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="section-header reveal">
+                <p class="eyebrow">Competências</p>
+                <h2>Stack orientada a análise, modelagem e entrega.</h2>
+            </div>
+            <div class="skills-grid reveal">
+                <div class="skill-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Dados e BI</h3>
+                    <p>Power BI, Tableau, Excel, análise exploratória, indicadores e storytelling com dados.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Python e SQL</h3>
+                    <p>Pandas, NumPy, consultas SQL, ETL, limpeza de dados e automação de rotinas analíticas.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Regressão, classificação, validação cruzada, tuning, métricas, interpretação e XGBoost.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cubes"></i>
+                    <h3>Engenharia de ML</h3>
+                    <p>FastAPI, Docker, MLflow, deploy, serialização de modelos e fundamentos de MLOps.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-    </section>
+        <section id="projects" class="section projects-section">
+            <div class="section-header reveal">
+                <p class="eyebrow">Projetos selecionados</p>
+                <h2>Portfólio com foco em organização, documentação e aplicação prática.</h2>
+                <p>
+                    Os cards priorizam o repositório no GitHub para avaliação do código, estrutura e documentação.
+                    Quando há notebook público no Kaggle, ele aparece como caminho complementar.
+                </p>
+            </div>
 
-    <footer id="contact" class="footer glass">
+            <div class="projects-grid">
+                <article class="project-card featured reveal">
+                    <div class="project-topline">
+                        <span class="project-type">Classificação · RH Analytics</span>
+                        <span class="priority-pill">GitHub prioritário</span>
+                    </div>
+                    <h3>Google Advanced Analytics: Churn de Funcionários</h3>
+                    <p>
+                        Modelo supervisionado para prever risco de desligamento na Salifort Motors, conectando satisfação,
+                        desempenho, tempo de casa, carga de projetos e horas mensais a decisões de retenção. O projeto compara
+                        algoritmos como regressão logística, árvores, Random Forest e XGBoost em pipeline modularizado.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>GridSearchCV</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/niltonPegass/ML_classification_HR_salifort" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.kaggle.com/code/niltonpegass/hr-salifort-motors-capstone-project" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
+                    </div>
+                </article>
+
+                <article class="project-card featured reveal">
+                    <div class="project-topline">
+                        <span class="project-type">Regressão · Mobilidade Urbana</span>
+                        <span class="priority-pill">GitHub prioritário</span>
+                    </div>
+                    <h3>Google Advanced Analytics: Previsão de Tarifa de Táxi</h3>
+                    <p>
+                        Projeto de regressão para estimar o valor de corridas Yellow Taxi em Nova York a partir de distância,
+                        duração, horário, rota e características operacionais. Inclui engenharia de atributos temporais,
+                        tratamento de outliers, comparação de modelos e avaliação com métricas de regressão.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Regressão</span><span>Feature Engineering</span><span>Statsmodels</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/niltonPegass/ML_regression_Yellow_Taxi" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.kaggle.com/code/niltonpegass/yellow-taxi-regression-fare-predict" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-topline">
+                        <span class="project-type">MLOps · Ciclo de Vida</span>
+                    </div>
+                    <h3>Zoomcamp: MLOps Course</h3>
+                    <p>
+                        Repositório de estudos sobre fundamentos de MLOps, rastreamento de experimentos e práticas para levar
+                        modelos além do notebook. Material conectado ao ciclo de treinamento, avaliação, versionamento e
+                        operacionalização de modelos.
+                    </p>
+                    <div class="project-tags">
+                        <span>MLflow</span><span>Experiment Tracking</span><span>Notebooks</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/niltonPegass/MLOps_zoomcamp" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-topline">
+                        <span class="project-type">ML Engineering · DataTalksClub</span>
+                    </div>
+                    <h3>Zoomcamp: Machine Learning Course</h3>
+                    <p>
+                        Jornada de aprendizado em engenharia de machine learning com notebooks, tarefas e projetos cobrindo
+                        regressão, classificação, métricas, árvores, XGBoost, deep learning, APIs, Docker, serverless e Kubernetes.
+                    </p>
+                    <div class="project-tags">
+                        <span>ML Engineering</span><span>Docker</span><span>FastAPI</span><span>Deep Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/niltonPegass/ML_zoomcamp" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-topline">
+                        <span class="project-type">Bootcamps · Python e Banco de Dados</span>
+                    </div>
+                    <h3>DIO Challenges: Ciência de Dados e Bancos de Dados</h3>
+                    <p>
+                        Coleção de desafios práticos envolvendo Python, SQL, ETL, modelagem de dados, machine learning e
+                        fundamentos de bancos de dados. Demonstra consistência de estudo, resolução de problemas e organização
+                        de entregas em trilhas intensivas.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span><span>SQL</span><span>ETL</span><span>Database</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/niltonPegass/DIO_challenges" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-topline">
+                        <span class="project-type">Web Scraping · Dados Públicos</span>
+                    </div>
+                    <h3>Gastos Públicos: Web Scraping e Power BI</h3>
+                    <p>
+                        Automação da coleta de dados públicos de Volta Redonda com Python, preparação tabular com pandas e
+                        criação de dashboard em Power BI para analisar despesas com viagens e diárias, reforçando transparência
+                        e monitoramento de recursos públicos.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span><span>BeautifulSoup</span><span>Pandas</span><span>Power BI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/niltonPegass/web_scraping" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="repository-cta reveal">
+                <div>
+                    <p class="eyebrow">Mais projetos</p>
+                    <h3>Explore outros estudos, notebooks e repositórios públicos.</h3>
+                </div>
+                <a href="https://github.com/niltonPegass?tab=repositories" target="_blank" rel="noreferrer" class="btn btn-secondary">
+                    Ver todos os repositórios <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
         <div class="footer-content reveal">
-            <h2>Vamos trabalhar juntos?</h2>
-            <p>Acesse minhas redes e repositórios para explorar meus modelos, visualizações de dados e códigos open-source.</p>
+            <p class="eyebrow">Contato</p>
+            <h2>Vamos conversar sobre dados, análise e modelos aplicados a negócio?</h2>
+            <p>Acesse meus perfis para avaliar projetos, notebooks e histórico profissional.</p>
             <div class="social-links">
-                <a href="https://github.com/niltonPegass?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.kaggle.com/niltonpegass" target="_blank"><i class="fab fa-kaggle"></i></a>
+                <a href="https://github.com/niltonPegass?tab=repositories" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/niltonpegass" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                <a href="mailto:niltonm.pegas@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="copyright">© 2026 Nilton Pegass. Construído de forma dinâmica e moderna.</p>
+            <p class="copyright">© 2026 Nilton Pegas. Portfólio de dados, BI e machine learning.</p>
         </div>
     </footer>
 
