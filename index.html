@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Nilton Pegas, analista de dados com foco em machine learning, BI, Python, SQL e projetos aplicados a negócio.">
-    <title>Nilton Pegas | Dados, BI e Machine Learning</title>
+    <meta name="description" content="Nilton Pegas, Data Scientist e Senior Data Analyst com projetos em Machine Learning, MLOps, Python, SQL, Power BI, demand forecasting, anomaly detection e MLflow.">
+    <title>Nilton Pegas | Data Scientist & Senior Data Analyst | Python · ML · MLOps</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
@@ -12,147 +12,161 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar" aria-label="Navegação principal">
+    <nav class="navbar" aria-label="Navegação principal" data-i18n-attr="aria-label:navAria">
         <div class="nav-container">
             <a href="#hero" class="logo">Nilton Pegas</a>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Competências</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
+            <div class="nav-actions">
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="navAbout">Sobre</a></li>
+                    <li><a href="#skills" data-i18n="navSkills">Competências</a></li>
+                    <li><a href="#projects" data-i18n="navProjects">Projetos</a></li>
+                    <li><a href="#contact" data-i18n="navContact">Contato</a></li>
+                </ul>
+                <div class="language-switch" aria-label="Selecionar idioma" data-i18n-attr="aria-label:languageAria">
+                    <button type="button" class="language-option" data-lang="pt">🇧🇷 PT</button>
+                    <button type="button" class="language-option active" data-lang="en">🇺🇸 EN</button>
+                </div>
+            </div>
         </div>
     </nav>
 
     <main>
         <header id="hero" class="hero-section">
             <div class="hero-content reveal">
-                <p class="eyebrow">Data Analyst · Machine Learning · Business Intelligence</p>
-                <h1>Transformo dados em decisões com clareza técnica e foco em negócio.</h1>
-                <p class="hero-copy">
-                    Sou Nilton Pegas, Analista de Dados no Grupo OFS, com certificação Google Advanced Data Analytics,
-                    formação em Engenharia Mecânica e atuação prática em dashboards, consultas a bases de dados,
-                    modelagem preditiva e automação de análises.
-                </p>
+                
+                <p class="eyebrow" data-i18n="heroEyebrow">Data Scientist · Senior Data Analyst · MLOps · Machine Learning</p>
+                <h1 data-i18n="heroTitle">Transformo dados em modelos, automações e decisões com impacto mensurável.</h1>
+                    <p class="hero-copy" data-i18n="heroCopy">
+                        Sou Nilton Pegas, Analista e Cientista de Dados com formação em Engenharia Mecânica pela Universidade Federal Fluminense e Pós-graduação em Business Intelligence & Data Analytics. Atuo com Python, Machine Learning e MLOps, SQL e Power BI — construindo modelos, pipelines e automações aplicados a problemas reais de negócio.
+                    </p>
                 <div class="hero-buttons">
                     <a href="https://github.com/niltonPegass?tab=repositories" target="_blank" rel="noreferrer" class="btn btn-primary">
-                        <i class="fab fa-github"></i> Ver GitHub
+                        <i class="fab fa-github"></i> <span data-i18n="btnGithub">Ver GitHub</span>
                     </a>
                     <a href="https://www.linkedin.com/in/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-secondary">
-                        <i class="fab fa-linkedin"></i> LinkedIn
+                        <i class="fab fa-linkedin"></i> <span data-i18n="btnLinkedin">LinkedIn</span>
+                    </a>
+                    <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-secondary">
+                        <i class="fab fa-kaggle"></i> <span data-i18n="btnKaggle">Kaggle</span>
                     </a>
                 </div>
             </div>
 
-            <aside class="hero-panel reveal" aria-label="Resumo profissional">
-                <div class="profile-card">
-                    <span class="profile-label">Foco atual</span>
-                    <h2>Analytics aplicado ao negócio</h2>
-                    <p>
-                        Construção de pipelines analíticos, modelos supervisionados, dashboards e estudos que conectam
-                        evidências quantitativas a decisões operacionais e estratégicas.
-                    </p>
-                </div>
-                <div class="metric-grid">
-                    <div>
-                        <strong>Top 6</strong>
-                        <span>Bootcamp Python Data Analytics com 23k+ participantes</span>
+            <aside class="hero-panel reveal" aria-label="Resumo profissional" data-i18n-attr="aria-label:heroPanelAria">
+                    <div class="profile-card">
+                        <span class="profile-label" data-i18n="focusLabel">Ciclo completo de ML - Dos dados à produção</span>
+                        <h2 data-i18n="focusTitle"></h2>
+                        <p data-i18n="focusCopy">Pipelines analíticos, modelos preditivos e automações - da exploração ao deploy: EDA, feature engineering, modelagem supervisionada, validação, MLOps e automação com Python, SQL, MLflow e Docker.</p>
                     </div>
-                    <div>
-                        <strong>Top 17</strong>
-                        <span>Bootcamp Data Science com Python com 17k+ participantes</span>
+                    <div class="metric-grid">
+                        <div class="metric-item">
+                            <strong>Top 6</strong>
+                            <span>Bootcamp Python Data Analytics — entre os melhores em competição com mais de 23.000 participantes</span>
+                        </div>
+                        <div class="metric-item">
+                            <strong>Top 17</strong>
+                            <span>Bootcamp Data Science com Python — entre os melhores em competição com mais de 17.000 participantes</span>
+                        </div>
+                        <div class="metric-bigger" style="grid-column: 1 / -1;">
+                            <h3>Cursos de Destaque</h3>
+                            <ul>
+                                <li>Google Advanced Data Analytics Certificate — análise, modelagem preditiva e comunicação técnica</li>
+                                <li>DataTalksClub (ML Zoomcamp + MLOps Zoomcamp) — ciclo completo de Machine Learning até produção</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        <strong>12</strong>
-                        <span>Repositórios públicos com estudos e projetos de dados</span>
-                    </div>
-                    <div>
-                        <strong>Google</strong>
-                        <span>Advanced Data Analytics Certificate</span>
-                    </div>
-                </div>
             </aside>
         </header>
 
         <section id="about" class="section about-section">
             <div class="section-header reveal">
-                <p class="eyebrow">Sobre mim</p>
-                <h2>Perfil analítico com repertório técnico e visão de impacto.</h2>
+                <p class="eyebrow" data-i18n="aboutEyebrow">Sobre mim</p>
+                <h2 data-i18n="aboutTitle">Perfil senior em analytics, machine learning e automação aplicada.</h2>
             </div>
             <div class="about-grid reveal">
                 <article class="about-card large-card">
-                    <h3>Apresentação</h3>
-                    <p>
-                        Trabalho na interseção entre análise de negócio e ciência de dados. Minha rotina envolve transformar
-                        bases de dados em diagnósticos, dashboards e modelos que ajudam equipes a priorizar ações, medir
-                        desempenho e identificar oportunidades. Tenho base analítica construída na Engenharia Mecânica e
-                        aprofundamento em BI, Python, SQL e machine learning.
+                    <h3 data-i18n="aboutPresentationTitle">Apresentação</h3>
+                    <p data-i18n="aboutPresentationCopy">
+                        Trabalho na interseção entre análise de dados, ciência de dados e engenharia de ML. Minha formação em Engenharia Mecânica pela Universidade Federal Fluminense me deu base analítica sólida; a pós-graduação em BI & Data Analytics e trilhas como ML Zoomcamp e MLOps Zoomcamp (DataTalksClub) ampliaram meu repertório técnico para o ciclo completo de modelos — da exploração ao deploy. Tenho interesse crescente em GenAI, RAG e automação inteligente com LLMs, áreas que venho explorando em projetos próprios com Ollama e N8N.
                     </p>
                 </article>
                 <article class="about-card">
-                    <h3>Formação</h3>
-                    <p>Business Intelligence & Analytics pela Conquer Business School e Engenharia Mecânica pela UFF.</p>
+                    <h3 data-i18n="educationTitle">Formação</h3>
+                    <ul>
+                        <li>Business Intelligence & Analytics – Conquer Business School</li>
+                        <li>Engenharia Mecânica – Universidade Federal Fluminense</li>
+                        <li>Pós‑graduação em Business Intelligence & Data Analytics</li>
+                    </ul>
                 </article>
-                <article class="about-card">
-                    <h3>Credenciais</h3>
-                    <p>Google Advanced Data Analytics, bootcamps DIO/iFood/Squadio e trilhas DataTalksClub.</p>
+                <article class="about-card credential-card">
+                    <img src="coursera [google career] - google advanced data analytics.png" alt="Emblema Google Advanced Data Analytics" data-i18n-attr="alt:googleBadgeAlt">
+                    <div>
+                        <h3 data-i18n="credentialsTitle">Credenciais</h3>
+                        <p data-i18n="credentialsCopy">Google Advanced Data Analytics, ML Zoomcamp (DataTalks.Club) e MLOps Zoomcamp (DataTalks.Club).</p>
+                    </div>
                 </article>
             </div>
         </section>
 
         <section id="skills" class="section skills-section">
             <div class="section-header reveal">
-                <p class="eyebrow">Competências</p>
-                <h2>Stack orientada a análise, modelagem e entrega.</h2>
+                <p class="eyebrow" data-i18n="skillsEyebrow">Competências</p>
+                <h2 data-i18n="skillsTitle">Stack orientada a análise, modelagem, automação e entrega.</h2>
             </div>
-            <div class="skills-grid reveal">
-                <div class="skill-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Dados e BI</h3>
-                    <p>Power BI, Tableau, Excel, análise exploratória, indicadores e storytelling com dados.</p>
+                <div class="skills-grid reveal">
+                    <div class="skill-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3 data-i18n="skillBiTitle">Dados & BI</h3>
+                        <p data-i18n="skillBiCopy">Power BI · Tableau · Excel · Análise Exploratória · Indicadores · Storytelling com Dados</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3 data-i18n="skillPythonTitle">Python & SQL</h3>
+                        <p data-i18n="skillPythonCopy">Pandas · NumPy · Scikit-learn · MySQL · Oracle · ETL · Automação de Rotinas</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-brain"></i>
+                        <h3 data-i18n="skillMlTitle">Machine Learning</h3>
+                        <p data-i18n="skillMlCopy">Regressão · Classificação · Clusterização · Detecção de Anomalias · Previsão de Demanda · XGBoost · Tuning · Validação Cruzada</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-calculator"></i>
+                        <h3 data-i18n="skillStatsTitle">Estatística</h3>
+                        <p data-i18n="skillStatsCopy">Modelagem Estatística · Testes de Hipótese · Teste A/B · Regressão · Correlação · Inferência</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cubes"></i>
+                        <h3 data-i18n="skillMlEngTitle">Engenharia de ML & MLOps</h3>
+                        <p data-i18n="skillMlEngCopy">MLflow · Docker · FastAPI · Deploy · Serialização de Modelos · Experiment Tracking · Versionamento</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-robot"></i>
+                        <h3 data-i18n="skillGenAiTitle">GenAI & Automação</h3>
+                        <p data-i18n="skillGenAiCopy">N8N · Ollama · RAG · ChatGPT/Gemini API · Automação com LLMs · Integração de Agentes</p>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Python e SQL</h3>
-                    <p>Pandas, NumPy, consultas SQL, ETL, limpeza de dados e automação de rotinas analíticas.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Machine Learning</h3>
-                    <p>Regressão, classificação, validação cruzada, tuning, métricas, interpretação e XGBoost.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-cubes"></i>
-                    <h3>Engenharia de ML</h3>
-                    <p>FastAPI, Docker, MLflow, deploy, serialização de modelos e fundamentos de MLOps.</p>
-                </div>
-            </div>
         </section>
 
         <section id="projects" class="section projects-section">
             <div class="section-header reveal">
-                <p class="eyebrow">Projetos selecionados</p>
-                <h2>Portfólio com foco em organização, documentação e aplicação prática.</h2>
-                <p>
-                    Os cards priorizam o repositório no GitHub para avaliação do código, estrutura e documentação.
-                    Quando há notebook público no Kaggle, ele aparece como caminho complementar.
+                <p class="eyebrow" data-i18n="projectsEyebrow">Projetos selecionados</p>
+                <h2 data-i18n="projectsTitle">Portfólio com foco em código, documentação, deploy e aplicação prática.</h2>
+                <p data-i18n="projectsCopy">
+                    Projetos selecionados para demonstrar análise aplicada, engenharia de atributos, modelagem, MLOps, visualização e comunicação de impacto de negócio.
                 </p>
             </div>
 
             <div class="projects-grid">
                 <article class="project-card featured reveal">
                     <div class="project-topline">
-                        <span class="project-type">Classificação · RH Analytics</span>
-                        <span class="priority-pill">GitHub prioritário</span>
+                        <span class="project-type" data-i18n="projectChurnType">Classificação · RH Analytics</span>
                     </div>
-                    <h3>Google Advanced Analytics: Churn de Funcionários</h3>
-                    <p>
-                        Modelo supervisionado para prever risco de desligamento na Salifort Motors, conectando satisfação,
-                        desempenho, tempo de casa, carga de projetos e horas mensais a decisões de retenção. O projeto compara
-                        algoritmos como regressão logística, árvores, Random Forest e XGBoost em pipeline modularizado.
+                    <h3 data-i18n="projectChurnTitle">Google Advanced Analytics: Churn de Funcionários</h3>
+                    <p data-i18n="projectChurnCopy">
+                        Modelo supervisionado para prever risco de desligamento na Salifort Motors, conectando satisfação, desempenho, tempo de casa, carga de projetos e horas mensais a decisões de retenção. O projeto compara regressão logística, árvores, Random Forest e XGBoost em pipeline modularizado com leitura orientada a impacto de negócio.
                     </p>
                     <div class="project-tags">
-                        <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>GridSearchCV</span>
+                        <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>Feature Engineering</span><span>Business Impact</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/niltonPegass/ML_classification_HR_salifort" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
@@ -162,17 +176,14 @@
 
                 <article class="project-card featured reveal">
                     <div class="project-topline">
-                        <span class="project-type">Regressão · Mobilidade Urbana</span>
-                        <span class="priority-pill">GitHub prioritário</span>
+                        <span class="project-type" data-i18n="projectTaxiType">Regressão · Mobilidade Urbana</span>
                     </div>
-                    <h3>Google Advanced Analytics: Previsão de Tarifa de Táxi</h3>
-                    <p>
-                        Projeto de regressão para estimar o valor de corridas Yellow Taxi em Nova York a partir de distância,
-                        duração, horário, rota e características operacionais. Inclui engenharia de atributos temporais,
-                        tratamento de outliers, comparação de modelos e avaliação com métricas de regressão.
+                    <h3 data-i18n="projectTaxiTitle">Google Advanced Analytics: Previsão de Tarifa de Táxi</h3>
+                    <p data-i18n="projectTaxiCopy">
+                        Projeto de regressão para estimar o valor de corridas Yellow Taxi em Nova York a partir de distância, duração, horário, rota e características operacionais. Inclui engenharia de atributos temporais, tratamento de outliers, comparação de modelos e avaliação com métricas alinhadas à tomada de decisão.
                     </p>
                     <div class="project-tags">
-                        <span>Python</span><span>Regressão</span><span>Feature Engineering</span><span>Statsmodels</span>
+                        <span>Python</span><span>Regressão</span><span>Feature Engineering</span><span>Statsmodels</span><span>Business Impact</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/niltonPegass/ML_regression_Yellow_Taxi" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
@@ -182,69 +193,11 @@
 
                 <article class="project-card reveal">
                     <div class="project-topline">
-                        <span class="project-type">MLOps · Ciclo de Vida</span>
+                        <span class="project-type" data-i18n="projectScrapingType">Web Scraping · Dados Públicos</span>
                     </div>
-                    <h3>Zoomcamp: MLOps Course</h3>
-                    <p>
-                        Repositório de estudos sobre fundamentos de MLOps, rastreamento de experimentos e práticas para levar
-                        modelos além do notebook. Material conectado ao ciclo de treinamento, avaliação, versionamento e
-                        operacionalização de modelos.
-                    </p>
-                    <div class="project-tags">
-                        <span>MLflow</span><span>Experiment Tracking</span><span>Notebooks</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/niltonPegass/MLOps_zoomcamp" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
-                    </div>
-                </article>
-
-                <article class="project-card reveal">
-                    <div class="project-topline">
-                        <span class="project-type">ML Engineering · DataTalksClub</span>
-                    </div>
-                    <h3>Zoomcamp: Machine Learning Course</h3>
-                    <p>
-                        Jornada de aprendizado em engenharia de machine learning com notebooks, tarefas e projetos cobrindo
-                        regressão, classificação, métricas, árvores, XGBoost, deep learning, APIs, Docker, serverless e Kubernetes.
-                    </p>
-                    <div class="project-tags">
-                        <span>ML Engineering</span><span>Docker</span><span>FastAPI</span><span>Deep Learning</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/niltonPegass/ML_zoomcamp" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
-                    </div>
-                </article>
-
-                <article class="project-card reveal">
-                    <div class="project-topline">
-                        <span class="project-type">Bootcamps · Python e Banco de Dados</span>
-                    </div>
-                    <h3>DIO Challenges: Ciência de Dados e Bancos de Dados</h3>
-                    <p>
-                        Coleção de desafios práticos envolvendo Python, SQL, ETL, modelagem de dados, machine learning e
-                        fundamentos de bancos de dados. Demonstra consistência de estudo, resolução de problemas e organização
-                        de entregas em trilhas intensivas.
-                    </p>
-                    <div class="project-tags">
-                        <span>Python</span><span>SQL</span><span>ETL</span><span>Database</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/niltonPegass/DIO_challenges" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
-                    </div>
-                </article>
-
-                <article class="project-card reveal">
-                    <div class="project-topline">
-                        <span class="project-type">Web Scraping · Dados Públicos</span>
-                    </div>
-                    <h3>Gastos Públicos: Web Scraping e Power BI</h3>
-                    <p>
-                        Automação da coleta de dados públicos de Volta Redonda com Python, preparação tabular com pandas e
-                        criação de dashboard em Power BI para analisar despesas com viagens e diárias, reforçando transparência
-                        e monitoramento de recursos públicos.
+                    <h3 data-i18n="projectScrapingTitle">Gastos Públicos: Web Scraping e Power BI</h3>
+                    <p data-i18n="projectScrapingCopy">
+                        Projeto aplicado de coleta automatizada de dados públicos de Volta Redonda com Python, preparação tabular com pandas e dashboard em Power BI para analisar despesas com viagens e diárias, reforçando transparência e monitoramento de recursos públicos.
                     </p>
                     <div class="project-tags">
                         <span>Python</span><span>BeautifulSoup</span><span>Pandas</span><span>Power BI</span>
@@ -254,15 +207,66 @@
                         <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
                     </div>
                 </article>
+
+                <article class="project-card reveal">
+                    <div class="project-topline">
+                        <span class="project-type" data-i18n="projectMlopsType">MLOps · Ciclo de Vida</span>
+                    </div>
+                    <h3 data-i18n="projectMlopsTitle">Zoomcamp: MLOps Course</h3>
+                    <p data-i18n="projectMlopsCopy">
+                        Projeto de aprendizado aplicado em MLOps com rastreamento de experimentos, versionamento, avaliação e operacionalização de modelos. O repositório organiza práticas com MLflow, experiment tracking e deploy para transformar modelos em entregas reprodutíveis além do notebook.
+                    </p>
+                    <div class="project-tags">
+                        <span>MLflow</span><span>Experiment Tracking</span><span>Deploy</span><span>MLOps</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/niltonPegass/MLOps_zoomcamp" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-topline">
+                        <span class="project-type" data-i18n="projectMlType">ML Engineering · DataTalksClub</span>
+                    </div>
+                    <h3 data-i18n="projectMlTitle">Zoomcamp: Machine Learning Course</h3>
+                    <p data-i18n="projectMlCopy">
+                        Projeto de aprendizado aplicado em engenharia de machine learning, cobrindo regressão, classificação, métricas, árvores, XGBoost, deep learning e entrega de modelos. Inclui práticas com Docker, FastAPI, deploy, APIs e organização de código para produção.
+                    </p>
+                    <div class="project-tags">
+                        <span>ML Engineering</span><span>Docker</span><span>FastAPI</span><span>Deploy</span><span>Deep Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/niltonPegass/ML_zoomcamp" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-topline">
+                        <span class="project-type" data-i18n="projectDioType">Bootcamps · Python e Banco de Dados</span>
+                    </div>
+                    <h3 data-i18n="projectDioTitle">DIO Challenges: Ciência de Dados e Bancos de Dados</h3>
+                    <p data-i18n="projectDioCopy">
+                        Coleção de desafios práticos envolvendo Python, SQL, ETL, modelagem de dados, machine learning e fundamentos de bancos de dados. Demonstra consistência de estudo, resolução de problemas e organização de entregas em trilhas intensivas.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span><span>SQL</span><span>ETL</span><span>Database</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/niltonPegass/DIO_challenges" target="_blank" rel="noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" class="btn btn-ghost"><i class="fab fa-kaggle"></i> Kaggle</a>
+                    </div>
+                </article>
             </div>
 
             <div class="repository-cta reveal">
                 <div>
-                    <p class="eyebrow">Mais projetos</p>
-                    <h3>Explore outros estudos, notebooks e repositórios públicos.</h3>
+                    <p class="eyebrow" data-i18n="moreProjectsEyebrow">Mais projetos</p>
+                    <h3 data-i18n="moreProjectsTitle">Explore outros estudos, notebooks e repositórios públicos.</h3>
                 </div>
                 <a href="https://github.com/niltonPegass?tab=repositories" target="_blank" rel="noreferrer" class="btn btn-secondary">
-                    Ver todos os repositórios <i class="fas fa-arrow-right"></i>
+                    <span data-i18n="moreProjectsButton">Ver todos os repositórios</span> <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </section>
@@ -270,16 +274,17 @@
 
     <footer id="contact" class="footer">
         <div class="footer-content reveal">
-            <p class="eyebrow">Contato</p>
-            <h2>Vamos conversar sobre dados, análise e modelos aplicados a negócio?</h2>
-            <p>Acesse meus perfis para avaliar projetos, notebooks e histórico profissional.</p>
+            <p class="eyebrow" data-i18n="contactEyebrow">Contato</p>
+            <h2 data-i18n="contactTitle">Vamos conversar sobre dados, machine learning e modelos aplicados a negócio?</h2>
+            <p data-i18n="contactCopy">Acesse meus perfis para avaliar projetos, notebooks e histórico profissional.</p>
             <div class="social-links">
                 <a href="https://github.com/niltonPegass?tab=repositories" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/niltonpegass" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.kaggle.com/niltonpegass" target="_blank" rel="noreferrer" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
                 <a href="mailto:niltonm.pegas@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="copyright">© 2026 Nilton Pegas. Portfólio de dados, BI e machine learning.</p>
+            <img class="footer-photo" src="profile-pic-dark-circle.png" alt="Foto de perfil de Nilton Pegas" data-i18n-attr="alt:profilePhotoAlt">
+            <p class="copyright" data-i18n="copyright">© 2026 Nilton Pegas. Data Scientist & Senior Data Analyst | Python · ML · MLOps · BI</p>
         </div>
     </footer>
 
