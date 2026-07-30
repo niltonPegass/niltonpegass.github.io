@@ -28,7 +28,7 @@ const translations = {
         metricTop6: 'Bootcamp Python Data Analytics com mais de 23.000 participantes',
         metricTop17: 'Bootcamp Data Science com Python com 17.000 participantes',
         metricPosition: 'Analista Sênior',
-        metricRepos: 'Profissional com experiência na área de análise e reputação de excelência.',
+        metricRepos: 'Profissional com experiência na área de análise e reputação de excelência',
         metricGoogle: 'Advanced Data Analytics Certificate',
         aboutEyebrow: 'Sobre mim',
         aboutTitle: 'Perfil senior em analytics, machine learning e automação aplicada.',
