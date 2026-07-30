@@ -27,7 +27,7 @@ const translations = {
         focusCopy: 'Pipelines analíticos, modelos preditivos e automações - da exploração ao deploy: EDA, feature engineering, modelagem supervisionada, validação, MLOps e automação com Python, SQL, MLflow e Docker.',
         metricTop6: 'Bootcamp Python Data Analytics com mais de 23.000 participantes',
         metricTop17: 'Bootcamp Data Science com Python com 17.000 participantes',
-        metricRepos: 'Repositórios públicos com estudos e projetos de dados',
+        metricRepos: 'profissional com experiência na área de análise e reputação de excelência.',
         metricGoogle: 'Advanced Data Analytics Certificate',
         aboutEyebrow: 'Sobre mim',
         aboutTitle: 'Perfil senior em analytics, machine learning e automação aplicada.',
